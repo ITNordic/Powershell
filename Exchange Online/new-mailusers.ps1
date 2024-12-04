@@ -1,4 +1,4 @@
-$users = Import-Csv -Path "C:\path"
+$users = Import-Csv -Path "C:\path\mailusers.csv"
 
 function Generate-RandomPassword {
     param (
@@ -16,3 +16,6 @@ foreach ($user in $users) {
 	Write-Output "Created user: $($user.Name) with password: $password"
 }
 
+foreach ($user in $users) {
+	Set-MailUser -Identity $user.Name -EmailAddresses @{Add=$user.ProxyAddress}
+}
