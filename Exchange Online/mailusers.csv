@@ -1,2 +1,2 @@
-Name,Alias,ExternalEmailAddress,MicrosoftOnlineServicesID
-Kalle Kula,kalkul,kalle@external.domain.com,kalle@mydomain.com
+Name,Alias,ExternalEmailAddress,MicrosoftOnlineServicesID,ProxyAddress
+Kalle Kula,kalkul,kalle@gsuite.domain.com,kalle@domain.com,kalle@m365.domain.com
